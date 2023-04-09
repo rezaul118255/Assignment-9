@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "name": "Software Development",
+        "jobLogo": "https://static.vecteezy.com/system/resources/previews/000/603/780/original/eye-care-logo-and-symbols-template-vector-icons-app.jpg",
+        "jobTitle": "Full Stack Developer",
+        "jobType": "Full-Time",
+        "location": "New York, NY",
+        "salaryRange": "$80,000 - $100,000",
+        "jobDescription": "We are seeking a talented full-stack developer to join our team and help us build innovative software solutions for our clients. The ideal candidate will have experience with modern front-end and back-end frameworks and be passionate about creating exceptional user experiences.",
+        "jobResponsibility": [
+            "Develop and maintain web applications using modern front-end and back-end frameworks.",
+            "Collaborate with designers and product owners to create intuitive user experiences."
+        ],
+        "educationalRequirements": "Bachelor's degree in Computer Science ",
+        "experiences": "3+ years of experience in full-stack development.",
+        "phoneNumber": "555-1234",
+        "email": "jobs@example.com"
+    },
+    {
+        "id": 2,
+        "name": "Data Science",
+        "jobLogo": "https://images-platform.99static.com//6B62Pc9YhQj9bNNB24Izfr06unI=/323x212:1184x1073/fit-in/500x500/99designs-contests-attachments/122/122821/attachment_122821455",
+        "jobTitle": "Data Analyst",
+        "jobType": "Part-Time",
+        "location": "San Francisco, CA",
+        "salaryRange": "$50,000 - $70,000",
+        "jobDescription": "We are looking for a talented data analyst to help us make data-driven decisions and improve our business processes. The ideal candidate will have experience with statistical analysis and data visualization tools and be able to communicate insights effectively to stakeholders.",
+        "jobResponsibility": [
+            "Collect and analyze data from various sources.",
+            "Create visualizations and reports to communicate insights to stakeholders."
+        ],
+        "educationalRequirements": "Bachelor's degree in Mathematics, Statistics, Economics, or a related field.",
+        "experiences": "2+ years of experience in data analysis.",
+        "phoneNumber": "555-5678",
+        "email": "jobs@example.com"
+    },
+    {
+        "id": 3,
+        "name": "Marketing",
+        "jobLogo": "https://www.logodesign.net/images/home-industry/marketing-logo-01.jpg",
+        "jobTitle": "Marketing Manager",
+        "jobType": "Full-Time",
+        "location": "Chicago, IL",
+        "salaryRange": "$70,000 - $90,000",
+        "jobDescription": "We are seeking an experienced marketing manager to lead our marketing team and drive growth for our business. The ideal candidate will have experience with both online and offline marketing channels and be able to create and execute effective marketing campaigns.",
+        "jobResponsibility": [
+            "Develop and execute marketing strategies to drive growth for our business.",
+            "Manage and mentor a team of marketing professionals.",
+            "Collaborate with cross-functional teams to create effective marketing campaigns."
+        ],
+        "educationalRequirements": "Bachelor's degree in Marketing, Business, or a related field.",
+        "experiences": "5+ years of experience in marketing"
+    },
+    {
+        "id": 4,
+        "name": "Sales",
+        "jobLogo": "https://images-platform.99static.com/rSK_nwp3gnGdzklLWWvIedekMAE=/100x100:900x900/500x500/top/smart/99designs-contests-attachments/80/80478/attachment_80478026",
+        "jobTitle": "Account Executive",
+        "jobType": "Full-Time",
+        "location": "Austin, TX",
+        "salaryRange": "$60,000 - $80,000",
+        "jobDescription": "We are looking for a highly motivated account executive to join our sales team and help us grow our business. The ideal candidate will have experience in sales and be able to build strong relationships with customers.",
+        "jobResponsibility": [
+            "Identify and pursue new sales opportunities.",
+            "Build strong relationships with customers and provide excellent customer service.",
+            "Manage the entire sales process from prospecting to closing deals."
+        ],
+        "educationalRequirements": "Bachelor's degree in Business, Marketing",
+        "experiences": "3+ years of experience in sales.",
+        "phoneNumber": "555-6789",
+        "email": "jobs@example.com"
+    },
+    {
+        "id": 5,
+        "name": "Design",
+        "jobLogo": "https://global-uploads.webflow.com/5e157547d6f791d34ea4e2bf/5f34020f3ddff73ab7d77bf0_CandaceDesigns.png",
+        "jobTitle": "UX Designer",
+        "jobType": "Full-Time",
+        "location": "Seattle, WA",
+        "salaryRange": "$80,000 - $100,000",
+        "jobDescription": "We are seeking a talented UX designer to join our design team and help us create innovative and intuitive user experiences. The ideal candidate will have experience with user research, wireframing, and prototyping tools.",
+        "jobResponsibility": [
+            "Conduct user research to understand user needs and pain points.",
+            "Create wireframes and prototypes to test and iterate on designs.",
+            "Collaborate with product managers and engineers to ensure designs are feasible and meet business requirements."
+        ],
+        "educationalRequirements": "Bachelor's degree in Design",
+        "experiences": "3+ years of experience in UX design.",
+        "phoneNumber": "555-3456",
+        "email": "jobs@example.com"
+    },
+    {
+        "id": 6,
+        "name": "Finance",
+        "jobLogo": "https://cdn3.vectorstock.com/i/1000x1000/72/87/financial-company-logo-institute-vector-35157287.jpg",
+        "jobTitle": "Financial Analyst",
+        "jobType": "Full-Time",
+        "location": "Boston, MA",
+        "salaryRange": "$70,000 - $90,000",
+        "jobDescription": "We are seeking a skilled financial analyst to help us analyze financial data and make informed business decisions. The ideal candidate will have experience with financial modeling and data analysis tools.",
+        "jobResponsibility": [
+            "Collect and analyze financial data from various sources.",
+            "Create financial models to support business decision-making.",
+            "Provide financial analysis and insights to stakeholders."
+        ],
+        "educationalRequirements": "Bachelor's degree in Finance",
+        "experiences": "3+ years of experience in financial analysis.",
+        "phoneNumber": "555-7890",
+        "email": "jobs@example.com"
+    }
+]
