@@ -39,15 +39,15 @@ const FeaturedJobDetails = () => {
                                 <p className='text-center text-3xl '>Job Details</p>
                                 <hr />
                                 <div className='mx-9'>
-                                    <p>Salary: {salaryRange}</p>
-                                    <p>JobTitle: {jobTitle}</p>
+                                    <p> <span className='text-1xl font-bold'>Salary:</span>{salaryRange}</p>
+                                    <p>  <span className='text-1xl font-bold'>JobTitle:</span>  {jobTitle}</p>
                                     <p className='text-center text-3xl '>Contact information</p>
                                 </div>
                                 <hr />
                                 <div className='mx-9'>
-                                    <p>Phone :{phoneNumber}</p>
-                                    <p> Email: {email}</p>
-                                    <p>Address:{location}</p>
+                                    <p> <span className='text-1xl font-bold'>Phone :</span>{phoneNumber}</p>
+                                    <p> <span className='text-1xl font-bold'> Email:</span> {email}</p>
+                                    <p>  <span className='text-1xl font-bold'> Address:</span>{location}</p>
                                     <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-6 mx-auto my-6'>Apply Now</button>
                                 </div>
 
