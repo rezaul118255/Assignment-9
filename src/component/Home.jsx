@@ -33,7 +33,7 @@ const Home = () => {
                     <p className='text-center text-1xl mt-4'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 
                 </div>
-                <div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 mt-20 mx-9 md:mx-16'>
+                <div className=' grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 mt-20 mx-9 md:mx-16'>
                     {
                         featuredJob.map(featured => <FeaturedJob
                             key={featured.id}
@@ -44,11 +44,12 @@ const Home = () => {
 
                 </div>
 
-                <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-6 mx-auto'>See All Jobs</button>
+
 
 
 
             </div>
+            <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-6 ms-16'>See All Jobs</button>
 
 
 

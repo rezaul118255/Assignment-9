@@ -8,6 +8,11 @@
 .featured img {
     height: 170px;
     width: 170px;
+    margin-left: 20px;
 
     border-radius: 15px;
+}
+
+.featured button {
+    margin-left: 20px;
 }

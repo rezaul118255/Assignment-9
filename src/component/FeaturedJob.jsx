@@ -23,7 +23,7 @@ const FeaturedJob = ({ featured }) => {
                 <p className='text-1xl mx-6 mt-3'>{salaryRange}</p>
             </div>
 
-            <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-6 mt-6 mx-auto'> <Link to={`/FeaturedJobDetails/${id}`}>View Details</Link>
+            <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-6 mx-auto'> <Link to={`/FeaturedJobDetails/${id}`}>View Details</Link>
             </button>
 
 

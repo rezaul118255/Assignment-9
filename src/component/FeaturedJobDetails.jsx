@@ -14,31 +14,52 @@ const FeaturedJobDetails = () => {
     const storeJobData = details.filter((detail) => detail.id == id);
     console.log(storeJobData)
 
-    // let jobDetails = useLoaderData(id)
-    // console.log(jobDetails)
-    // useEffect(() => {
-    //     if (jobDetails) {
-    //         let detailsData = jobDetails.find(jobDetails.id)
-    //         setdetails(detailsData)
-    //     }
-    // }, [])
+
 
     return (
         <div >
-            <h1 className='text-6xl text-center'>Job Details page </h1>
+
             {
                 storeJobData.map((storedata) => {
-                    const { id, name, jobLogo, jobDescription } = storedata
+                    const { id, name, jobLogo, jobDescription, email, phoneNumber, experiences, educationalRequirements, jobResponsibility, salaryRange, location, jobTitle } = storedata
                     console.log(id)
 
-                    return <article key={id}>
-                        <h1>{name}</h1>
-                        <p>{jobDescription}</p>
-                        <h1>{id}</h1>
-                        <img src={jobLogo} alt="" />
+                    return <div key={id}>
+                        <h1 className='text-4xl text-center mt-12 font-semibold'>Job Details page </h1>
+
+                        <div className='grid grid-cols-1 md:grid-cols-2 mx-16 md:mx-28 mt-16'>
+                            <div className='mx-9 '>
+                                <p> <span className='text-1xl font-bold my-8'>Job Description:</span>  {jobDescription}</p>
+                                <p> <span className='text-1xl font-bold my-5 mt-6'>jobResponsibility:</span>{jobResponsibility}</p>
+                                <p> <span className='text-1xl font-bold'>Educational Requirements:</span> {educationalRequirements}</p>
+                                <p> <span className='text-1xl font-bold'>Experiences: </span> {experiences}</p>
+
+                            </div>
+                            <div className='bg-pink-100'>
+                                <p className='text-center text-3xl '>Job Details</p>
+                                <hr />
+                                <div className='mx-9'>
+                                    <p>Salary: {salaryRange}</p>
+                                    <p>JobTitle: {jobTitle}</p>
+                                    <p className='text-center text-3xl '>Contact information</p>
+                                </div>
+                                <hr />
+                                <div className='mx-9'>
+                                    <p>Phone :{phoneNumber}</p>
+                                    <p> Email: {email}</p>
+                                    <p>Address:{location}</p>
+                                    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-6 mx-auto my-6'>Apply Now</button>
+                                </div>
 
 
-                    </article>
+
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
 
                 })
 
