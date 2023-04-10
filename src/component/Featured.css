@@ -1,0 +1,13 @@
+.featured {
+    border: 1px solid lightblue;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.featured img {
+    height: 170px;
+    width: 170px;
+
+    border-radius: 15px;
+}

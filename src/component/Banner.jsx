@@ -3,9 +3,9 @@ import React from 'react';
 const Banner = () => {
     return (
         <div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mt-9 mx-9'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mt-16 md:mx-16 mx-9'>
                 <div className=''>
-                    <h1 className='text-6xl font-bold'>Now your time <br /> Change your <br /> <span className="text-blue-500">Life</span>  </h1>
+                    <h1 className='text-3xl md:text-6xl font-bold'>Now your time <br /> Change your <br /> <span className="text-blue-500">Life</span>  </h1>
                     <p className='mt-6 '>
                         Explore thousands of job opportunities with all the information <br /> you need. Its your future. Come find it. Manage all your job application <br /> from start to finish.
                     </p>
