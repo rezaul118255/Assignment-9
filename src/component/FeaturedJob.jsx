@@ -1,11 +1,13 @@
 import React from 'react';
 import "./Featured.css"
+import { Link } from 'react-router-dom';
+
 
 const FeaturedJob = ({ featured }) => {
     // console.log(featured)
-    const { jobLogo, jobTitle, name, jobType, jobCategory, location, salaryRange } = featured
+    const { jobLogo, jobTitle, name, jobType, jobCategory, location, salaryRange, id } = featured
     return (
-        <div className='featured'>
+        <div className='featured '>
 
 
             < img src={jobLogo} alt="" />
@@ -20,7 +22,12 @@ const FeaturedJob = ({ featured }) => {
                 <p className='text-1xl mx-6 mt-3'>{location}</p>
                 <p className='text-1xl mx-6 mt-3'>{salaryRange}</p>
             </div>
-            <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-6 mt-6'>View Details</button>
+
+            <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-6 mt-6 mx-auto'> <Link to={`/FeaturedJobDetails/${id}`}>View Details</Link>
+            </button>
+
+
+
 
 
 

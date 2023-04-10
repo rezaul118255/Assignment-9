@@ -10,6 +10,8 @@ import Home from './component/Home';
 import Statistics from './component/Statistics';
 import AppliedJobs from './component/AppliedJobs';
 import Blog from './component/Blog';
+import FeaturedJobDetails from './component/FeaturedJobDetails';
+
 
 
 
@@ -23,23 +25,16 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        // loader: () => fetch('job-category.json'),
-        loader: () => fetch('Featured-job.json')
-
-
-
-
+        loader: () => fetch('/Featured-job.json')
       },
-      // {
-      //   path: "/",
-      //   element: <Featured></Featured>,
-      //   // loader: () => fetch('job-category.json'),
-      //   loader: () => fetch('Featured-job.json')
 
 
+      {
+        path: 'FeaturedJObDetails/:id',
+        element: <FeaturedJobDetails></FeaturedJobDetails>,
+        loader: ({ params }) => fetch(`Featured-job.json`)
+      },
 
-
-      // },
 
       {
         path: "Statistics",

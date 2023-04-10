@@ -10,6 +10,7 @@ const Home = () => {
     // const jobCategory = useLoaderData()
     const featuredJob = useLoaderData()
 
+
     return (
         <div >
             <Banner></Banner>
@@ -22,6 +23,7 @@ const Home = () => {
                         ></JobCategory>)
 
                     } */}
+                    <JobCategory></JobCategory>
 
                 </div>
 
