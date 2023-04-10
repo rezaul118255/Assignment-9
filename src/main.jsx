@@ -11,6 +11,7 @@ import Statistics from './component/Statistics';
 import AppliedJobs from './component/AppliedJobs';
 import Blog from './component/Blog';
 import FeaturedJobDetails from './component/FeaturedJobDetails';
+import ErrorPage from './component/ErrorPage';
 
 
 
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
