@@ -10,18 +10,28 @@ const JobCategory = () => {
             .then(data => setCategory(data))
     }, []);
 
-    console.log(Category)
+    // console.log(Category)
 
 
 
-    const { name, jobImgUrl, availableJobs } = Category
+    // const { name, jobImgUrl, availableJobs } = Category
     return (
-        <div className='category'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-20 mx-9 md:mx-16 '>
+            {
+                Category.map((category) => {
+                    const { name, jobImgUrl, availableJobs } = category
+                    console.log(name)
+                    return <div>
+                        <img src={jobImgUrl} alt="" />
+                        <h3 className='text-2xl mt-3'>{name}</h3>
+                        <p className='mt-2'>{availableJobs}</p>
+
+                    </div>
+                })
+            }
 
 
-            <img src={jobImgUrl} alt="" />
-            <h3 className='text-2xl mt-3'>{name}</h3>
-            <p className='mt-2'>{availableJobs}</p>
+
 
         </div>
     );

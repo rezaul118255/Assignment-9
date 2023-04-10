@@ -15,14 +15,12 @@ const Home = () => {
         <div >
             <Banner></Banner>
             <div className='job-category'>
-                <div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-20 mx-9 md:mx-16'>
-                    {/* {
-                        jobCategory.map(Category => <JobCategory
-                            key={Category.id}
-                            Category={Category}
-                        ></JobCategory>)
+                <div>
+                    <h1 className='text-center text-4xl mt-14'>Job Category List</h1>
+                    <p className='text-center text-1xl mt-4'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                </div>
+                <div >
 
-                    } */}
                     <JobCategory></JobCategory>
 
                 </div>
