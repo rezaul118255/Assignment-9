@@ -1,18 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+// import { addToDb } from '../utils/fakeDb';
 
 
-const FeaturedJobDetails = () => {
+const FeaturedJobDetails = ({ handleAddToCart }) => {
     const [details, setdetails] = useState([])
     let { id } = useParams()
+    console.log(id)
+
+
     useEffect((id) => {
         fetch('/public/Featured-job.json')
             .then(res => res.json())
             .then(data => setdetails(data))
     }, []);
-    console.log(details)
+    // console.log(details)
     const storeJobData = details.filter((detail) => detail.id == id);
-    console.log(storeJobData)
+    // console.log(storeJobData)
 
 
 
@@ -21,7 +25,7 @@ const FeaturedJobDetails = () => {
 
             {
                 storeJobData.map((storedata) => {
-                    const { id, name, jobLogo, jobDescription, email, phoneNumber, experiences, educationalRequirements, jobResponsibility, salaryRange, location, jobTitle } = storedata
+                    const { id, jobDescription, email, phoneNumber, experiences, educationalRequirements, jobResponsibility, salaryRange, location, jobTitle } = storedata
                     console.log(id)
 
                     return <div key={id}>
@@ -48,7 +52,7 @@ const FeaturedJobDetails = () => {
                                     <p> <span className='text-1xl font-bold'>Phone :</span>{phoneNumber}</p>
                                     <p> <span className='text-1xl font-bold'> Email:</span> {email}</p>
                                     <p>  <span className='text-1xl font-bold'> Address:</span>{location}</p>
-                                    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-6 mx-auto my-6'>Apply Now</button>
+                                    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-6 mx-auto my-6'> Apply Now</button>
                                 </div>
 
 

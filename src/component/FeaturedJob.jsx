@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 const FeaturedJob = ({ featured }) => {
+
     // console.log(featured)
     const { jobLogo, jobTitle, name, jobType, jobCategory, location, salaryRange, id } = featured
     return (

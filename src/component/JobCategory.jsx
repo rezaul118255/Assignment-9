@@ -16,7 +16,7 @@ const JobCategory = () => {
             {
                 Category.map((category) => {
                     const { name, jobImgUrl, availableJobs } = category
-                    console.log(name)
+                    // console.log(name)
                     return <div className='category'>
                         <img src={jobImgUrl} alt="" />
                         <h3 className='text-2xl mt-3'>{name}</h3>

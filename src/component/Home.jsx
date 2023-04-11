@@ -3,12 +3,17 @@ import Banner from './Banner';
 import JobCategory from './JobCategory';
 import FeaturedJob from './FeaturedJob';
 import { useLoaderData } from 'react-router-dom';
+import { addToDb } from '../utils/fakeDb';
 
 
 
 const Home = () => {
     // const jobCategory = useLoaderData()
     const featuredJob = useLoaderData()
+    const handleAddToCart = id => {
+        condole.log(id)
+        addToDb(id)
+    }
 
 
     return (
@@ -38,6 +43,7 @@ const Home = () => {
                         featuredJob.map(featured => <FeaturedJob
                             key={featured.id}
                             featured={featured}
+                            handleAddToCart={handleAddToCart}
                         ></FeaturedJob>)
 
                     }
