@@ -1,3 +1,4 @@
+import { key } from 'localforage';
 import React, { useEffect, useState } from 'react';
 import('./Jobcategory.css')
 
@@ -15,7 +16,11 @@ const JobCategory = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-20 mx-9 md:mx-16'>
             {
                 Category.map((category) => {
-                    const { name, jobImgUrl, availableJobs } = category
+
+
+                    const { name, jobImgUrl, availableJobs, id } = category
+
+
                     // console.log(name)
                     return <div className='category'>
                         <img src={jobImgUrl} alt="" />

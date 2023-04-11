@@ -3,13 +3,35 @@ import { useLoaderData, useParams } from 'react-router-dom';
 // import { addToDb } from '../utils/fakeDb';
 
 
-const FeaturedJobDetails = ({ handleAddToCart }) => {
+const FeaturedJobDetails = () => {
     const [details, setdetails] = useState([])
     let { id } = useParams()
-    console.log(id)
+    // console.log(id)
+    // const hadelAddToCart = id => {
+    //     console.log(id)
+    // } 
+    // localStorage.setItem(id)
+    // localStorage.setItem('jobDetails', id)
+    // let applyedJob = {}
+    // get previous data form local storage
+    // const storeJob = localStorage.getItem('jobDetails')
+    // if (storeJob) {
+    //     applyedJob = JSON.parse(storeJob)
+    // }
+    // const quantity = applyedJob[id]
+    // if (quantity) {
+    //     const newquantity = quantity + '1'
+    //     applyedJob[id] = newquantity
+
+    // } else {
+    //     applyedJob[id] = '1'
+    // }
+    // localStorage.setItem('applyedJob', JSON.stringify(applyedJob))
 
 
-    useEffect((id) => {
+
+
+    useEffect(() => {
         fetch('/public/Featured-job.json')
             .then(res => res.json())
             .then(data => setdetails(data))
@@ -26,7 +48,7 @@ const FeaturedJobDetails = ({ handleAddToCart }) => {
             {
                 storeJobData.map((storedata) => {
                     const { id, jobDescription, email, phoneNumber, experiences, educationalRequirements, jobResponsibility, salaryRange, location, jobTitle } = storedata
-                    console.log(id)
+                    // console.log(id)
 
                     return <div key={id}>
                         <h1 className='text-4xl text-center mt-12 font-semibold'>Job Details page </h1>
@@ -52,7 +74,7 @@ const FeaturedJobDetails = ({ handleAddToCart }) => {
                                     <p> <span className='text-1xl font-bold'>Phone :</span>{phoneNumber}</p>
                                     <p> <span className='text-1xl font-bold'> Email:</span> {email}</p>
                                     <p>  <span className='text-1xl font-bold'> Address:</span>{location}</p>
-                                    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-6 mx-auto my-6'> Apply Now</button>
+                                    <button onClick={() => alert('vi local store add korte pari nai')} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-6 mx-auto my-6'>Apply Now </button>
                                 </div>
 
 
