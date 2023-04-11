@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+// import ApplyDetails from './ApplyDetails';
+import AppliedJobs from './AppliedJobs';
 // import { addToDb } from '../utils/fakeDb';
 
 
@@ -9,10 +11,10 @@ const FeaturedJobDetails = () => {
     // console.log(id)
     // const hadelAddToCart = id => {
     //     console.log(id)
-    // } 
+    // }
     // localStorage.setItem(id)
     // localStorage.setItem('jobDetails', id)
-    // let applyedJob = {}
+    let applyedJob = {}
     // get previous data form local storage
     // const storeJob = localStorage.getItem('jobDetails')
     // if (storeJob) {
@@ -44,6 +46,13 @@ const FeaturedJobDetails = () => {
 
     return (
         <div >
+            {/* {
+                storeJobData.map((storedata) => <AppliedJobs
+                    key={storeJobData.id}
+                    storedata={storedata}
+                ></AppliedJobs>)
+            } */}
+
 
             {
                 storeJobData.map((storedata) => {

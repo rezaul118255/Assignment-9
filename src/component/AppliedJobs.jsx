@@ -26,7 +26,8 @@
 // export default AppliedJobs;
 import React from 'react';
 
-const AppliedJobs = () => {
+const AppliedJobs = ({ storedata }) => {
+    console.log(storedata)
     return (
         <div>
             <h1>this is a applied job</h1>
