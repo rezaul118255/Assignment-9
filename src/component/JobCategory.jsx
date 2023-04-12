@@ -1,4 +1,4 @@
-import { key } from 'localforage';
+// import { key } from 'localforage';
 import React, { useEffect, useState } from 'react';
 import('./Jobcategory.css')
 
@@ -6,7 +6,7 @@ const JobCategory = () => {
     const [Category, setCategory] = useState([])
 
     useEffect(() => {
-        fetch('/public/job-category.json')
+        fetch('/job-category.json')
             .then(res => res.json())
             .then(data => setCategory(data))
     }, []);
