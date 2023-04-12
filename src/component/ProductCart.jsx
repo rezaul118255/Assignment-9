@@ -12,7 +12,7 @@ const ProductCart = ({ product }) => {
                     <div className='pic'>
                         <img src={jobLogo} alt="" />
                     </div>
-                    <div>
+                    <div className='mt-6'>
                         <h1 className='text-1xl mx-6'>{jobTitle}</h1>
                         <h1 className='text-1xl mx-6 mt-3'>{name}</h1>
 
