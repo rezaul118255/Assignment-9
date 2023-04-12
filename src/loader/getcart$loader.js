@@ -15,7 +15,3 @@ export const productsAndCartData = async () => {
     }
     return { jobCart }
 }
-
-
-
-

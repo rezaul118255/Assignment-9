@@ -1,8 +1,12 @@
 import React from 'react';
 
 const FeaturedDetailsShow = ({ storedata, handleAddToCart }) => {
+
+
+
     const { id, jobDescription, email, phoneNumber, experiences, educationalRequirements, jobResponsibility, salaryRange, location, jobTitle } = storedata
     // console.log(storedata)
+
     return (
         <div>
             <div key={id}>

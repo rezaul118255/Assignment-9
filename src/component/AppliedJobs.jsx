@@ -1,24 +1,36 @@
-
 import React from 'react';
-import { getStoredCart } from '../utils/fakeDb';
+// import { getStoredCart } from '../utils/fakeDb';
 
-// import { useLoaderData } from 'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
+import ProductCart from './ProductCart';
 
 
 const AppliedJobs = () => {
-    // const { jobCart } = useLoaderData()
-    const jobCart = getStoredCart()
-    console.log(jobCart)
+    const { jobCart } = useLoaderData()
+    // const jobCart = getStoredCart()
+    // console.log(jobCart)
 
 
 
 
     return (
         <div>
-            <h1 className="text-center text-4xl mt-6 mx-auto">Vai data local storage a set korte parce but data get kore akhane show korate pari nai</h1>
+
+            <ul className='mt-6'>
+                {jobCart.map(product => (
+                    <ProductCart
+                        key={product.id}
+                        product={product}
+                    ></ProductCart>
+
+                ))}
+            </ul>
+
 
         </div>
     );
 };
 
 export default AppliedJobs;
+
+

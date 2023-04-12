@@ -1,12 +1,9 @@
-// add dat to local storage
+// add data to local storage
 const addToDb = id => {
-
-
     let jobCart = {}
     const storedJob = localStorage.getItem('jobCart')
     if (storedJob) {
         jobCart = JSON.parse(storedJob)
-
     }
 
     const quantity = jobCart[id]
@@ -24,9 +21,8 @@ const getStoredCart = () => {
     const storedJob = localStorage.getItem('jobCart')
     if (storedJob) {
         jobCart = JSON.parse(storedJob)
-
     }
-    return getStoredCart
+    return jobCart
 }
 
 export { addToDb, getStoredCart }

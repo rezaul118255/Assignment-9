@@ -20,7 +20,7 @@ const FeaturedJobDetails = () => {
 
 
     const handleAddToCart = id => {
-        console.log(id)
+        // console.log(id)
         addToDb(id)
     }
 
@@ -29,12 +29,16 @@ const FeaturedJobDetails = () => {
 
 
 
+
             {
-                storeJobData.map((storedata) => <FeaturedDetailsShow
-                    key={storedata.id}
-                    storedata={storedata}
-                    handleAddToCart={handleAddToCart}
-                ></FeaturedDetailsShow>
+                storeJobData.map((storedata) =>
+
+                    <FeaturedDetailsShow
+                        key={storedata.id}
+                        storedata={storedata}
+
+                        handleAddToCart={handleAddToCart}
+                    ></FeaturedDetailsShow>
                 )
 
             }

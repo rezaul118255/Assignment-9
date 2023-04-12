@@ -13,7 +13,7 @@ import AppliedJobs from './component/AppliedJobs';
 import Blog from './component/Blog';
 import FeaturedJobDetails from './component/FeaturedJobDetails';
 import ErrorPage from './component/ErrorPage';
-import ApplyDetails from './component/ApplyDetails';
+
 import { productsAndCartData } from './loader/getcart$loader';
 
 
@@ -46,24 +46,15 @@ const router = createBrowserRouter([
         element: <Statistics></Statistics>,
 
       },
-      {
-        path: "ApplyDetails",
-        element: <ApplyDetails></ApplyDetails>,
-      },
-      // {
-      //   path: "AppliedJobs",
-      //   element: <AppliedJobs></AppliedJobs>,
-      //   loader: productsAndCartData
 
-
-      // },
       {
         path: "AppliedJobs",
         element: <AppliedJobs></AppliedJobs>,
-        loader: () => fetch(`/public/Featured-job.json`),
+        loader: productsAndCartData
 
 
       },
+
       {
         path: "Blog",
         element: <Blog></Blog>

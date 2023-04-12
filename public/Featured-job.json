@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "1",
         "name": "Software Development",
         "jobLogo": "https://static.vecteezy.com/system/resources/previews/000/603/780/original/eye-care-logo-and-symbols-template-vector-icons-app.jpg",
         "jobTitle": "Full Stack Developer",
@@ -19,7 +19,7 @@
         "email": "jobs@example.com"
     },
     {
-        "id": 2,
+        "id": "2",
         "name": "Data Science",
         "jobLogo": "https://images-platform.99static.com//6B62Pc9YhQj9bNNB24Izfr06unI=/323x212:1184x1073/fit-in/500x500/99designs-contests-attachments/122/122821/attachment_122821455",
         "jobTitle": "Data Analyst",
@@ -38,7 +38,7 @@
         "email": "jobs@example.com"
     },
     {
-        "id": 3,
+        "id": "3",
         "name": "Marketing",
         "jobLogo": "https://www.logodesign.net/images/home-industry/marketing-logo-01.jpg",
         "jobTitle": "Marketing Manager",
@@ -56,7 +56,7 @@
         "experiences": "5+ years of experience in marketing"
     },
     {
-        "id": 4,
+        "id": "4",
         "name": "Sales",
         "jobLogo": "https://images-platform.99static.com/rSK_nwp3gnGdzklLWWvIedekMAE=/100x100:900x900/500x500/top/smart/99designs-contests-attachments/80/80478/attachment_80478026",
         "jobTitle": "Account Executive",
@@ -76,7 +76,7 @@
         "email": "jobs@example.com"
     },
     {
-        "id": 5,
+        "id": "5",
         "name": "Design",
         "jobLogo": "https://global-uploads.webflow.com/5e157547d6f791d34ea4e2bf/5f34020f3ddff73ab7d77bf0_CandaceDesigns.png",
         "jobTitle": "UX Designer",
@@ -96,7 +96,7 @@
         "email": "jobs@example.com"
     },
     {
-        "id": 6,
+        "id": "6",
         "name": "Finance",
         "jobLogo": "https://cdn3.vectorstock.com/i/1000x1000/72/87/financial-company-logo-institute-vector-35157287.jpg",
         "jobTitle": "Financial Analyst",
