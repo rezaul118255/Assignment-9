@@ -1,36 +1,21 @@
-// import React, { useEffect, useState } from 'react';
-// import { key } from 'localforage';
-// import React, { useEffect, useState } from 'react'
-// const [Category, setCategory] = useState([])
 
-
-
-// const handleAddToCart = product => {
-//     console.log(id)
-// }
-// const AppliedJobs = () => {
-//     useEffect(() => {
-//         fetch('/public/Featured-job.json.json')
-//             .then(res => res.json())
-//             .then(data => setCategory(data))
-//     }, []);
-//     console.log(Category)
-//     return (
-//         <div>
-//             <h1>this is a applied jobs</h1>
-
-//         </div>
-//     );
-// };
-
-// export default AppliedJobs;
 import React from 'react';
+import { getStoredCart } from '../utils/fakeDb';
 
-const AppliedJobs = ({ storedata }) => {
-    console.log(storedata)
+// import { useLoaderData } from 'react-router-dom';
+
+
+const AppliedJobs = () => {
+    // const { jobCart } = useLoaderData()
+    const jobCart = getStoredCart()
+    console.log(jobCart)
+
+
+
+
     return (
         <div>
-            <h1>this is a applied job</h1>
+            <h1 className="text-center text-4xl mt-6 mx-auto">Vai data local storage a set korte parce but data get kore akhane show korate pari nai</h1>
 
         </div>
     );
